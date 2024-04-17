@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>爱在西元前</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+            font-family: Arial, sans-serif;
+        }
+
+        .player {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        img.album-cover {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .lyrics {
+            margin-top: 20px;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="player">
+        <img src="album.webp" alt="专辑封面" class="album-cover">
+        <audio id="audioPlayer" controls>
+            <source src="爱在西元前 - 周杰伦.mp3" type="audio/mp3">
+            您的浏览器不支持 audio 元素。
+        </audio>
+        <div class="lyrics">
+            我给你的爱写在西元前<br>
+            深埋在美索不达米亚平原<br>
+            几十个世纪后出土发现<br>
+            泥板上的字迹依然清晰可见
+        </div>
+       
+    </div>
+    <script>
+        document.getElementById('audioPlayer').volume = 0.5; // 设置初始音量为50%
+    </script>
+</body>
+</html>
